@@ -35,7 +35,7 @@
         <ul class="navbar-nav pl-5 custom-nav">
           <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home</a></li>
           <li class="nav-item custom-nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
-          <li class="nav-item custom-nav-item"><a href="paymentstatus.php" class="nav-link">Payment Status</a></li>
+          <!-- <li class="nav-item custom-nav-item"><a href="paymentstatus.php" class="nav-link">Payment Status</a></li> -->
           <?php 
               session_start();   
               if (isset($_SESSION['is_login'])){
