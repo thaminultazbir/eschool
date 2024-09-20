@@ -55,6 +55,11 @@
                 <div class="form-group">
                   <i class="fas fa-key"></i><label for="stuLogPass" class="pl-2 font-weight-bold">Password</label><input type="password" class="form-control" placeholder="Password" name="stuLogPass" id="stuLogPass">
               </div>
+
+              <div class="form-group text-right">
+            <!-- Added data-dismiss="modal" to hide the login modal when opening the Forgot Password modal -->
+              <a href="#" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Forgot Password?</a>
+            </div>
             </form>
           </div>
           <div class="modal-footer">
@@ -65,6 +70,38 @@
         </div>
       </div>
     </div> <!-- End Student Login Modal -->
+
+    <!-- start forget Password modal  -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="forgotPasswordModalCenterTitle">Forgot Password</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="forgotPasswordForm" method="post" action="./passwordRecovery.php">
+              <div class="form-group">
+                <small id="forgotPassMsg"></small>
+                <label for="forgotEmail" class="font-weight-bold">Enter your registered email</label>
+                <input type="email" class="form-control" id="forgotEmail" placeholder="Enter email" name="rec_email">
+              </div>
+              <div class="form-group modal-footer">
+                <button type="submit" class="btn btn-primary" name="recovery">Submit</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <small id="forgotPassMsg"></small>
+
+          </div> -->
+        </div>
+      </div>  
+    </div>
+    <!-- End forget Password modal  -->
 
 
   <!-- Start Admin Login Modal -->
@@ -117,6 +154,7 @@
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </body>
 

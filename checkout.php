@@ -32,7 +32,7 @@ session_start();
     $post_data['cus_postcode'] = "1000";
     $post_data['cus_country'] = "Bangladesh";
     $post_data['cus_phone'] = "";
-    $post_data['cus_fax'] = "01711111111";
+    $post_data['cus_fax'] = "";
 
     # SHIPMENT INFORMATION
     $post_data['ship_name'] = "testeschojiy1";
